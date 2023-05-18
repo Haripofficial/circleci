@@ -8,6 +8,7 @@ pull: &pull
   filters:
     branches:
       only:
+        - dev
         - /^pull\/[\d]*$/
 
 # Define the jobs we want to run for this project
