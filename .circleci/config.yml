@@ -28,7 +28,7 @@ jobs:
       - run: echo "this is the build job"
       - run: echo "Source of trigger is << pipeline.trigger_source >>"
       - run: echo "Payload << pipeline.parameters.payload >>"
-      - run: echo "required value << pipeline.parameters.action >>"
+      - run: echo "required value << pipeline.action >>"
       
   destroy:
     docker:
