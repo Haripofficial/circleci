@@ -10,6 +10,7 @@ pull: &pull
       only:
         - dev
         - /^pull\/[\d]*$/
+        - main
 
 # Define the jobs we want to run for this project
 jobs:
