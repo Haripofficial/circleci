@@ -21,7 +21,7 @@ jobs:
       - run: echo "this is the build job"
       - run: echo "required value $CIRCLE_PAYLOAD"
       - run: echo "required value << pipeline.parameters.job >>"
-      - run: echo "required value << pipeline. >>"
+      - run: echo "required value"
       
   destroy:
     docker:
