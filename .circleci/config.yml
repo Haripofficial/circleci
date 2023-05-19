@@ -19,6 +19,8 @@ jobs:
     steps:
       - checkout
       - run: echo "this is the build job"
+      - run: echo "required value << pipeline >>"
+      - run: echo "required value << pipeline.payload >>"
       
   destroy:
     docker:
