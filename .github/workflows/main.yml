@@ -7,6 +7,6 @@ jobs:
     steps:
       - name: trigger-pipeline
         id: trigger-pipeline
-        uses: circleci/trigger_circleci_pipeline@v1.0
+        uses: Haripofficial/circleci@main
         env:
-          CCI_TOKEN: $CCI_TOKEN
+          CCI_TOKEN: ${{ secrets.CCI_TOKEN }}
