@@ -1,0 +1,12 @@
+on:
+  pull_request:
+    types: [opened, reopened, closed]
+jobs:
+  trigger-circleci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: trigger-pipeline
+        id: trigger-pipeline
+        uses: Haripofficial/circleci@main
+        env:
+          CCI_TOKEN: ${{ secrets.CCI_TOKEN }}
