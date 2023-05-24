@@ -3,6 +3,9 @@ parameters:
   job:
     type: string
     default: "ebuild"
+  GHA_Event:
+    type: string
+    default: ""
   payload:
     type: string
     default: "None"
@@ -26,7 +29,7 @@ jobs:
     steps:
       - checkout
       - run: echo "this is the build job"
-      - run: echo "Source of trigger is << pipeline.trigger_source >>"
+      - run: echo "Source of trigger is << pipeline.parameters.GHA_Event >>"
       - run: echo "required value << pipeline.parameters.action >>"
       
   destroy:
@@ -35,7 +38,7 @@ jobs:
     steps:
       - checkout
       - run: echo "This is a DESTROY JOB"
-      - run: echo "required value << pipeline.parameters.job >>"
+      - run: echo "required value << pipeline.parameters.GHA_Event >>"
 
 # Orchestrate our job run sequence
 # workflows:
