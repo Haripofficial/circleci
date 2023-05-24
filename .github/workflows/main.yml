@@ -1,6 +1,6 @@
 on:
   pull_request:
-    types: [opened, closed]
+    types: [opened, reopened, closed]
 jobs:
   trigger-circleci:
     runs-on: ubuntu-latest
