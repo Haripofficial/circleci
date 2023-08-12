@@ -78,6 +78,7 @@ jobs:
     resource_class: haripofficial/internal-runner
     steps:
       - run: echo "Hi I'm on a Container Runner!"
+      - run: curl http://192.168.29.62:5500/
 workflows:
   build-workflow:
     jobs:
