@@ -78,7 +78,7 @@ jobs:
     resource_class: haripofficial/internal-runner
     steps:
       - run: echo "Hi I'm on a Container Runner!"
-      - run: curl http://192.168.29.62:5500/
+      - run: curl http://10.7.130.215:5500/
 
 
   dep:
@@ -87,7 +87,7 @@ jobs:
     resource_class: haripofficial/internal-runner
     steps:
       - run: echo "Hi I'm on a Container Deploys josb"
-      - run: curl http://192.168.29.62:5500/
+      - run: curl http://10.7.130.215:5500/
 workflows:
   build-workflow:
     jobs:
